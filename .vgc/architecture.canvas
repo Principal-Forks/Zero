@@ -1,0 +1,736 @@
+{
+  "vv": {
+    "name": "Zero Email Application Architecture",
+    "version": "1.0.0",
+    "edgeTypes": {
+      "trpc-call": {
+        "style": "solid",
+        "color": "#22c55e"
+      },
+      "http-request": {
+        "style": "solid",
+        "color": "#06b6d4"
+      },
+      "websocket": {
+        "style": "animated",
+        "color": "#a855f7"
+      },
+      "oauth": {
+        "style": "dashed",
+        "color": "#f97316"
+      },
+      "auth-session": {
+        "style": "solid",
+        "color": "#f97316"
+      },
+      "db-query": {
+        "style": "solid",
+        "color": "#ef4444"
+      },
+      "db-write": {
+        "style": "solid",
+        "color": "#ef4444"
+      },
+      "email-sync": {
+        "style": "dotted",
+        "color": "#f97316"
+      },
+      "email-send": {
+        "style": "solid",
+        "color": "#22c55e"
+      },
+      "email-fetch": {
+        "style": "solid",
+        "color": "#06b6d4"
+      },
+      "ai-request": {
+        "style": "solid",
+        "color": "#a855f7"
+      },
+      "embedding": {
+        "style": "dashed",
+        "color": "#06b6d4"
+      },
+      "storage-write": {
+        "style": "solid",
+        "color": "#f97316"
+      },
+      "storage-read": {
+        "style": "solid",
+        "color": "#06b6d4"
+      },
+      "workflow-trigger": {
+        "style": "dashed",
+        "color": "#eab308"
+      },
+      "workflow-step": {
+        "style": "solid",
+        "color": "#eab308"
+      },
+      "telemetry": {
+        "style": "dotted",
+        "color": "#a855f7"
+      },
+      "error-report": {
+        "style": "dashed",
+        "color": "#ef4444"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "frontend",
+      "type": "frontend",
+      "x": 2256,
+      "y": -13,
+      "width": 200,
+      "height": 80,
+      "color": "#06b6d4",
+      "vv": {
+        "nodeType": "frontend",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "backend",
+      "type": "backend",
+      "x": 2350,
+      "y": 385,
+      "width": 200,
+      "height": 80,
+      "color": "#22c55e",
+      "vv": {
+        "nodeType": "backend",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "better-auth",
+      "type": "better-auth",
+      "x": 2066,
+      "y": 389,
+      "width": 180,
+      "height": 80,
+      "color": "#f97316",
+      "vv": {
+        "nodeType": "better-auth",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "zero-agent",
+      "type": "zero-agent",
+      "x": 4127,
+      "y": 686,
+      "width": 180,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "zero-agent",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "zero-driver",
+      "type": "zero-driver",
+      "x": 2430,
+      "y": 1210,
+      "width": 180,
+      "height": 80,
+      "color": "#f97316",
+      "vv": {
+        "nodeType": "zero-driver",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "zero-db",
+      "type": "zero-db",
+      "x": 2860,
+      "y": 685,
+      "width": 180,
+      "height": 80,
+      "color": "#22c55e",
+      "vv": {
+        "nodeType": "zero-db",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "zero-mcp",
+      "type": "zero-mcp",
+      "x": 4740,
+      "y": 912,
+      "width": 180,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "zero-mcp",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "workflow-runner",
+      "type": "workflow-runner",
+      "x": 3147,
+      "y": 720,
+      "width": 180,
+      "height": 80,
+      "color": "#eab308",
+      "vv": {
+        "nodeType": "workflow-runner",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "thread-sync-worker",
+      "type": "thread-sync-worker",
+      "x": 3274,
+      "y": 945,
+      "width": 200,
+      "height": 80,
+      "color": "#f97316",
+      "vv": {
+        "nodeType": "thread-sync-worker",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "shard-registry",
+      "type": "shard-registry",
+      "x": 3039,
+      "y": 946,
+      "width": 180,
+      "height": 80,
+      "color": "#22c55e",
+      "vv": {
+        "nodeType": "shard-registry",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "postgres",
+      "type": "postgres",
+      "x": 2570,
+      "y": 981,
+      "width": 180,
+      "height": 80,
+      "color": "#ef4444",
+      "vv": {
+        "nodeType": "postgres",
+        "shape": "circle"
+      }
+    },
+    {
+      "id": "r2-storage",
+      "type": "r2-storage",
+      "x": 3188,
+      "y": 1303,
+      "width": 180,
+      "height": 80,
+      "color": "#f97316",
+      "vv": {
+        "nodeType": "r2-storage",
+        "shape": "circle"
+      }
+    },
+    {
+      "id": "vectorize",
+      "type": "vectorize",
+      "x": 3444,
+      "y": 1302,
+      "width": 180,
+      "height": 80,
+      "color": "#06b6d4",
+      "vv": {
+        "nodeType": "vectorize",
+        "shape": "circle"
+      }
+    },
+    {
+      "id": "gmail-api",
+      "type": "gmail-api",
+      "x": 2562,
+      "y": 1398,
+      "width": 140,
+      "height": 80,
+      "color": "#ef4444",
+      "vv": {
+        "nodeType": "gmail-api",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "microsoft-graph",
+      "type": "microsoft-graph",
+      "x": 2362,
+      "y": 1398,
+      "width": 140,
+      "height": 80,
+      "color": "#06b6d4",
+      "vv": {
+        "nodeType": "microsoft-graph",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "openai",
+      "type": "openai",
+      "x": 4556,
+      "y": 916,
+      "width": 140,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "openai",
+        "shape": "hexagon"
+      }
+    },
+    {
+      "id": "anthropic",
+      "type": "anthropic",
+      "x": 4370,
+      "y": 920,
+      "width": 140,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "anthropic",
+        "shape": "hexagon"
+      }
+    },
+    {
+      "id": "google-ai",
+      "type": "google-ai",
+      "x": 4184,
+      "y": 924,
+      "width": 140,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "google-ai",
+        "shape": "hexagon"
+      }
+    },
+    {
+      "id": "groq",
+      "type": "groq",
+      "x": 3989,
+      "y": 927,
+      "width": 140,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "groq",
+        "shape": "hexagon"
+      }
+    },
+    {
+      "id": "perplexity",
+      "type": "perplexity",
+      "x": 3795,
+      "y": 936,
+      "width": 140,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "perplexity",
+        "shape": "hexagon"
+      }
+    },
+    {
+      "id": "resend",
+      "type": "resend",
+      "x": 2647,
+      "y": 689,
+      "width": 140,
+      "height": 80,
+      "color": "#22c55e",
+      "vv": {
+        "nodeType": "resend",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "twilio",
+      "type": "twilio",
+      "x": 2255,
+      "y": 681,
+      "width": 140,
+      "height": 80,
+      "color": "#ef4444",
+      "vv": {
+        "nodeType": "twilio",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "elevenlabs",
+      "type": "elevenlabs",
+      "x": 3612,
+      "y": 935,
+      "width": 140,
+      "height": 80,
+      "color": "#eab308",
+      "vv": {
+        "nodeType": "elevenlabs",
+        "shape": "rectangle"
+      }
+    },
+    {
+      "id": "upstash",
+      "type": "upstash",
+      "x": 2015,
+      "y": 685,
+      "width": 140,
+      "height": 80,
+      "color": "#22c55e",
+      "vv": {
+        "nodeType": "upstash",
+        "shape": "circle"
+      }
+    },
+    {
+      "id": "datadog",
+      "type": "datadog",
+      "x": 1749,
+      "y": 652,
+      "width": 140,
+      "height": 80,
+      "color": "#a855f7",
+      "vv": {
+        "nodeType": "datadog",
+        "shape": "diamond"
+      }
+    },
+    {
+      "id": "sentry",
+      "type": "sentry",
+      "x": 1173,
+      "y": 651,
+      "width": 140,
+      "height": 80,
+      "color": "#ef4444",
+      "vv": {
+        "nodeType": "sentry",
+        "shape": "diamond"
+      }
+    },
+    {
+      "id": "posthog",
+      "type": "posthog",
+      "x": 3053,
+      "y": 81,
+      "width": 140,
+      "height": 80,
+      "color": "#eab308",
+      "vv": {
+        "nodeType": "posthog",
+        "shape": "diamond"
+      }
+    },
+    {
+      "id": "autumn",
+      "type": "autumn",
+      "x": 1472,
+      "y": 681,
+      "width": 140,
+      "height": 80,
+      "color": "#22c55e",
+      "vv": {
+        "nodeType": "autumn",
+        "shape": "rectangle"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "frontend",
+      "toNode": "backend",
+      "vv": {
+        "edgeType": "trpc-call"
+      }
+    },
+    {
+      "id": "e2",
+      "fromNode": "frontend",
+      "toNode": "zero-agent",
+      "vv": {
+        "edgeType": "websocket"
+      }
+    },
+    {
+      "id": "e3",
+      "fromNode": "frontend",
+      "toNode": "better-auth",
+      "vv": {
+        "edgeType": "auth-session"
+      }
+    },
+    {
+      "id": "e4",
+      "fromNode": "backend",
+      "toNode": "zero-agent",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e5",
+      "fromNode": "backend",
+      "toNode": "zero-driver",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e6",
+      "fromNode": "backend",
+      "toNode": "zero-db",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e7",
+      "fromNode": "backend",
+      "toNode": "workflow-runner",
+      "vv": {
+        "edgeType": "workflow-trigger"
+      }
+    },
+    {
+      "id": "e8",
+      "fromNode": "zero-agent",
+      "toNode": "openai",
+      "vv": {
+        "edgeType": "ai-request"
+      }
+    },
+    {
+      "id": "e9",
+      "fromNode": "zero-agent",
+      "toNode": "anthropic",
+      "vv": {
+        "edgeType": "ai-request"
+      }
+    },
+    {
+      "id": "e10",
+      "fromNode": "zero-agent",
+      "toNode": "google-ai",
+      "vv": {
+        "edgeType": "ai-request"
+      }
+    },
+    {
+      "id": "e11",
+      "fromNode": "zero-agent",
+      "toNode": "groq",
+      "vv": {
+        "edgeType": "ai-request"
+      }
+    },
+    {
+      "id": "e12",
+      "fromNode": "zero-agent",
+      "toNode": "perplexity",
+      "vv": {
+        "edgeType": "ai-request"
+      }
+    },
+    {
+      "id": "e13",
+      "fromNode": "zero-agent",
+      "toNode": "zero-mcp",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e14",
+      "fromNode": "zero-driver",
+      "toNode": "gmail-api",
+      "vv": {
+        "edgeType": "email-sync"
+      }
+    },
+    {
+      "id": "e15",
+      "fromNode": "zero-driver",
+      "toNode": "microsoft-graph",
+      "vv": {
+        "edgeType": "email-sync"
+      }
+    },
+    {
+      "id": "e16",
+      "fromNode": "zero-driver",
+      "toNode": "gmail-api",
+      "vv": {
+        "edgeType": "oauth"
+      }
+    },
+    {
+      "id": "e17",
+      "fromNode": "zero-driver",
+      "toNode": "microsoft-graph",
+      "vv": {
+        "edgeType": "oauth"
+      }
+    },
+    {
+      "id": "e18",
+      "fromNode": "zero-driver",
+      "toNode": "r2-storage",
+      "vv": {
+        "edgeType": "storage-write"
+      }
+    },
+    {
+      "id": "e19",
+      "fromNode": "zero-db",
+      "toNode": "postgres",
+      "vv": {
+        "edgeType": "db-query"
+      }
+    },
+    {
+      "id": "e20",
+      "fromNode": "zero-db",
+      "toNode": "postgres",
+      "vv": {
+        "edgeType": "db-write"
+      }
+    },
+    {
+      "id": "e21",
+      "fromNode": "workflow-runner",
+      "toNode": "thread-sync-worker",
+      "vv": {
+        "edgeType": "workflow-step"
+      }
+    },
+    {
+      "id": "e22",
+      "fromNode": "workflow-runner",
+      "toNode": "shard-registry",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e23",
+      "fromNode": "thread-sync-worker",
+      "toNode": "zero-driver",
+      "vv": {
+        "edgeType": "email-fetch"
+      }
+    },
+    {
+      "id": "e24",
+      "fromNode": "thread-sync-worker",
+      "toNode": "r2-storage",
+      "vv": {
+        "edgeType": "storage-read"
+      }
+    },
+    {
+      "id": "e25",
+      "fromNode": "thread-sync-worker",
+      "toNode": "vectorize",
+      "vv": {
+        "edgeType": "embedding"
+      }
+    },
+    {
+      "id": "e26",
+      "fromNode": "backend",
+      "toNode": "resend",
+      "vv": {
+        "edgeType": "email-send"
+      }
+    },
+    {
+      "id": "e27",
+      "fromNode": "backend",
+      "toNode": "twilio",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e28",
+      "fromNode": "zero-agent",
+      "toNode": "elevenlabs",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e29",
+      "fromNode": "backend",
+      "toNode": "upstash",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e30",
+      "fromNode": "backend",
+      "toNode": "datadog",
+      "vv": {
+        "edgeType": "telemetry"
+      }
+    },
+    {
+      "id": "e31",
+      "fromNode": "backend",
+      "toNode": "sentry",
+      "vv": {
+        "edgeType": "error-report"
+      }
+    },
+    {
+      "id": "e32",
+      "fromNode": "frontend",
+      "toNode": "posthog",
+      "vv": {
+        "edgeType": "telemetry"
+      }
+    },
+    {
+      "id": "e33",
+      "fromNode": "frontend",
+      "toNode": "sentry",
+      "vv": {
+        "edgeType": "error-report"
+      }
+    },
+    {
+      "id": "e34",
+      "fromNode": "backend",
+      "toNode": "autumn",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    },
+    {
+      "id": "e35",
+      "fromNode": "backend",
+      "toNode": "postgres",
+      "vv": {
+        "edgeType": "db-query"
+      }
+    },
+    {
+      "id": "e36",
+      "fromNode": "better-auth",
+      "toNode": "postgres",
+      "vv": {
+        "edgeType": "http-request"
+      }
+    }
+  ]
+}

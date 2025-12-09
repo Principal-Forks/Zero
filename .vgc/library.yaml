@@ -1,0 +1,305 @@
+version: "1.0.0"
+name: "Zero Email Application Component Library"
+
+nodeComponents:
+  # Frontend Layer
+  frontend:
+    label: "Frontend (React Router)"
+    description: "React Router v7 application with Vite, TailwindCSS, and Shadcn UI"
+    icon: "Monitor"
+    color: 5 # cyan
+
+  # Backend Layer
+  backend:
+    label: "Backend (Cloudflare Workers)"
+    description: "Hono server on Cloudflare Workers with tRPC"
+    icon: "Server"
+    color: 4 # green
+
+  # Durable Objects
+  zero-agent:
+    label: "ZeroAgent"
+    description: "Stateful AI agent managing interactions and tool orchestration"
+    icon: "Bot"
+    color: 6 # purple
+
+  zero-driver:
+    label: "ZeroDriver"
+    description: "Email provider integration layer (Gmail, Outlook)"
+    icon: "Mail"
+    color: 2 # orange
+
+  zero-db:
+    label: "ZeroDB"
+    description: "Stateful database interaction layer"
+    icon: "Database"
+    color: 4 # green
+
+  zero-mcp:
+    label: "ZeroMCP"
+    description: "Model Context Protocol implementation"
+    icon: "Plug"
+    color: 6 # purple
+
+  workflow-runner:
+    label: "WorkflowRunner"
+    description: "Async workflow orchestration"
+    icon: "Workflow"
+    color: 3 # yellow
+
+  thread-sync-worker:
+    label: "ThreadSyncWorker"
+    description: "Email thread synchronization worker"
+    icon: "RefreshCw"
+    color: 2 # orange
+
+  shard-registry:
+    label: "ShardRegistry"
+    description: "Service discovery and shard management"
+    icon: "Network"
+    color: 4 # green
+
+  # Database
+  postgres:
+    label: "PostgreSQL"
+    description: "Primary database with Drizzle ORM"
+    icon: "Database"
+    color: 1 # red
+
+  # Storage & Vector
+  r2-storage:
+    label: "Cloudflare R2"
+    description: "Object storage for email threads and attachments"
+    icon: "HardDrive"
+    color: 2 # orange
+
+  vectorize:
+    label: "Cloudflare Vectorize"
+    description: "Vector database for email embeddings and search"
+    icon: "Search"
+    color: 5 # cyan
+
+  # External Email Providers
+  gmail-api:
+    label: "Gmail API"
+    description: "Google Gmail integration with OAuth2"
+    icon: "Mail"
+    color: 1 # red
+
+  microsoft-graph:
+    label: "Microsoft Graph"
+    description: "Outlook/Microsoft 365 integration"
+    icon: "Mail"
+    color: 5 # cyan
+
+  # AI/LLM Providers
+  openai:
+    label: "OpenAI"
+    description: "GPT-4o and GPT-4o-mini models"
+    icon: "Brain"
+    color: 6 # purple
+
+  anthropic:
+    label: "Anthropic Claude"
+    description: "Secondary/fallback LLM provider"
+    icon: "Brain"
+    color: 6 # purple
+
+  google-ai:
+    label: "Google AI"
+    description: "Google AI/Gemini models"
+    icon: "Brain"
+    color: 6 # purple
+
+  groq:
+    label: "Groq"
+    description: "Fast LLM inference"
+    icon: "Zap"
+    color: 6 # purple
+
+  perplexity:
+    label: "Perplexity"
+    description: "Web search-aware LLM"
+    icon: "Globe"
+    color: 6 # purple
+
+  # Communication Services
+  resend:
+    label: "Resend"
+    description: "Email delivery service"
+    icon: "SendHorizontal"
+    color: 4 # green
+
+  twilio:
+    label: "Twilio"
+    description: "SMS verification and notifications"
+    icon: "MessageSquare"
+    color: 1 # red
+
+  elevenlabs:
+    label: "ElevenLabs"
+    description: "Text-to-speech service"
+    icon: "Volume2"
+    color: 3 # yellow
+
+  # Infrastructure & Observability
+  upstash:
+    label: "Upstash Redis"
+    description: "Rate limiting and caching"
+    icon: "Gauge"
+    color: 4 # green
+
+  datadog:
+    label: "Datadog"
+    description: "Application monitoring"
+    icon: "Activity"
+    color: 6 # purple
+
+  sentry:
+    label: "Sentry"
+    description: "Error tracking and monitoring"
+    icon: "AlertTriangle"
+    color: 1 # red
+
+  posthog:
+    label: "PostHog"
+    description: "Product analytics"
+    icon: "BarChart3"
+    color: 3 # yellow
+
+  # Authentication
+  better-auth:
+    label: "Better Auth"
+    description: "Open-source authentication solution"
+    icon: "Lock"
+    color: 2 # orange
+
+  # Encryption
+  autumn:
+    label: "Autumn"
+    description: "End-to-end encryption service"
+    icon: "Shield"
+    color: 4 # green
+
+edgeComponents:
+  # API Communication
+  trpc-call:
+    label: "tRPC API"
+    description: "Type-safe RPC calls"
+    style: "solid"
+    color: "#22c55e" # green
+
+  http-request:
+    label: "HTTP"
+    description: "Standard HTTP requests"
+    style: "solid"
+    color: "#06b6d4" # cyan
+
+  websocket:
+    label: "WebSocket"
+    description: "Real-time bidirectional communication"
+    style: "animated"
+    color: "#a855f7" # purple
+
+  # Authentication & Authorization
+  oauth:
+    label: "OAuth 2.0"
+    description: "OAuth authentication flow"
+    style: "dashed"
+    color: "#f97316" # orange
+
+  auth-session:
+    label: "Auth Session"
+    description: "Authentication session management"
+    style: "solid"
+    color: "#f97316" # orange
+
+  # Data Operations
+  db-query:
+    label: "Query"
+    description: "Database query"
+    style: "solid"
+    color: "#ef4444" # red
+
+  db-write:
+    label: "Write"
+    description: "Database write operation"
+    style: "solid"
+    color: "#ef4444" # red
+
+  # Email Operations
+  email-sync:
+    label: "Sync"
+    description: "Email synchronization"
+    style: "dotted"
+    color: "#f97316" # orange
+
+  email-send:
+    label: "Send"
+    description: "Email sending"
+    style: "solid"
+    color: "#22c55e" # green
+
+  email-fetch:
+    label: "Fetch"
+    description: "Email fetching"
+    style: "solid"
+    color: "#06b6d4" # cyan
+
+  # AI Operations
+  ai-request:
+    label: "AI Request"
+    description: "LLM completion request"
+    style: "solid"
+    color: "#a855f7" # purple
+
+  ai-stream:
+    label: "AI Stream"
+    description: "Streaming LLM response"
+    style: "animated"
+    color: "#a855f7" # purple
+
+  embedding:
+    label: "Embed"
+    description: "Generate embeddings"
+    style: "dashed"
+    color: "#06b6d4" # cyan
+
+  # Storage Operations
+  storage-write:
+    label: "Store"
+    description: "Write to object storage"
+    style: "solid"
+    color: "#f97316" # orange
+
+  storage-read:
+    label: "Retrieve"
+    description: "Read from object storage"
+    style: "solid"
+    color: "#06b6d4" # cyan
+
+  # Workflow & Orchestration
+  workflow-trigger:
+    label: "Trigger"
+    description: "Workflow trigger"
+    style: "dashed"
+    color: "#eab308" # yellow
+
+  workflow-step:
+    label: "Step"
+    description: "Workflow step execution"
+    style: "solid"
+    color: "#eab308" # yellow
+
+  # Monitoring & Observability
+  telemetry:
+    label: "Telemetry"
+    description: "Metrics and logs"
+    style: "dotted"
+    color: "#a855f7" # purple
+
+  error-report:
+    label: "Error"
+    description: "Error reporting"
+    style: "dashed"
+    color: "#ef4444" # red
