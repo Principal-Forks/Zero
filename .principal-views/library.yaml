@@ -4,179 +4,179 @@ name: "Zero Email Application Component Library"
 nodeComponents:
   # Frontend Layer
   frontend:
-    label: "Frontend (React Router)"
+    defaultLabel: "Frontend (React Router)"
     description: "React Router v7 application with Vite, TailwindCSS, and Shadcn UI"
     icon: "Monitor"
     color: 5 # cyan
 
   # Backend Layer
   backend:
-    label: "Backend (Cloudflare Workers)"
+    defaultLabel: "Backend (Cloudflare Workers)"
     description: "Hono server on Cloudflare Workers with tRPC"
     icon: "Server"
     color: 4 # green
 
   # Durable Objects
   zero-agent:
-    label: "ZeroAgent"
+    defaultLabel: "ZeroAgent"
     description: "Stateful AI agent managing interactions and tool orchestration"
     icon: "Bot"
     color: 6 # purple
 
   zero-driver:
-    label: "ZeroDriver"
+    defaultLabel: "ZeroDriver"
     description: "Email provider integration layer (Gmail, Outlook)"
     icon: "Mail"
     color: 2 # orange
 
   zero-db:
-    label: "ZeroDB"
+    defaultLabel: "ZeroDB"
     description: "Stateful database interaction layer"
     icon: "Database"
     color: 4 # green
 
   zero-mcp:
-    label: "ZeroMCP"
+    defaultLabel: "ZeroMCP"
     description: "Model Context Protocol implementation"
     icon: "Plug"
     color: 6 # purple
 
   workflow-runner:
-    label: "WorkflowRunner"
+    defaultLabel: "WorkflowRunner"
     description: "Async workflow orchestration"
     icon: "Workflow"
     color: 3 # yellow
 
   thread-sync-worker:
-    label: "ThreadSyncWorker"
+    defaultLabel: "ThreadSyncWorker"
     description: "Email thread synchronization worker"
     icon: "RefreshCw"
     color: 2 # orange
 
   shard-registry:
-    label: "ShardRegistry"
+    defaultLabel: "ShardRegistry"
     description: "Service discovery and shard management"
     icon: "Network"
     color: 4 # green
 
   # Database
   postgres:
-    label: "PostgreSQL"
+    defaultLabel: "PostgreSQL"
     description: "Primary database with Drizzle ORM"
     icon: "Database"
     color: 1 # red
 
   # Storage & Vector
   r2-storage:
-    label: "Cloudflare R2"
+    defaultLabel: "Cloudflare R2"
     description: "Object storage for email threads and attachments"
     icon: "HardDrive"
     color: 2 # orange
 
   vectorize:
-    label: "Cloudflare Vectorize"
+    defaultLabel: "Cloudflare Vectorize"
     description: "Vector database for email embeddings and search"
     icon: "Search"
     color: 5 # cyan
 
   # External Email Providers
   gmail-api:
-    label: "Gmail API"
+    defaultLabel: "Gmail API"
     description: "Google Gmail integration with OAuth2"
     icon: "Mail"
     color: 1 # red
 
   microsoft-graph:
-    label: "Microsoft Graph"
+    defaultLabel: "Microsoft Graph"
     description: "Outlook/Microsoft 365 integration"
     icon: "Mail"
     color: 5 # cyan
 
   # AI/LLM Providers
   openai:
-    label: "OpenAI"
+    defaultLabel: "OpenAI"
     description: "GPT-4o and GPT-4o-mini models"
     icon: "Brain"
     color: 6 # purple
 
   anthropic:
-    label: "Anthropic Claude"
+    defaultLabel: "Anthropic Claude"
     description: "Secondary/fallback LLM provider"
     icon: "Brain"
     color: 6 # purple
 
   google-ai:
-    label: "Google AI"
+    defaultLabel: "Google AI"
     description: "Google AI/Gemini models"
     icon: "Brain"
     color: 6 # purple
 
   groq:
-    label: "Groq"
+    defaultLabel: "Groq"
     description: "Fast LLM inference"
     icon: "Zap"
     color: 6 # purple
 
   perplexity:
-    label: "Perplexity"
+    defaultLabel: "Perplexity"
     description: "Web search-aware LLM"
     icon: "Globe"
     color: 6 # purple
 
   # Communication Services
   resend:
-    label: "Resend"
+    defaultLabel: "Resend"
     description: "Email delivery service"
     icon: "SendHorizontal"
     color: 4 # green
 
   twilio:
-    label: "Twilio"
+    defaultLabel: "Twilio"
     description: "SMS verification and notifications"
     icon: "MessageSquare"
     color: 1 # red
 
   elevenlabs:
-    label: "ElevenLabs"
+    defaultLabel: "ElevenLabs"
     description: "Text-to-speech service"
     icon: "Volume2"
     color: 3 # yellow
 
   # Infrastructure & Observability
   upstash:
-    label: "Upstash Redis"
+    defaultLabel: "Upstash Redis"
     description: "Rate limiting and caching"
     icon: "Gauge"
     color: 4 # green
 
   datadog:
-    label: "Datadog"
+    defaultLabel: "Datadog"
     description: "Application monitoring"
     icon: "Activity"
     color: 6 # purple
 
   sentry:
-    label: "Sentry"
+    defaultLabel: "Sentry"
     description: "Error tracking and monitoring"
     icon: "AlertTriangle"
     color: 1 # red
 
   posthog:
-    label: "PostHog"
+    defaultLabel: "PostHog"
     description: "Product analytics"
     icon: "BarChart3"
     color: 3 # yellow
 
   # Authentication
   better-auth:
-    label: "Better Auth"
+    defaultLabel: "Better Auth"
     description: "Open-source authentication solution"
     icon: "Lock"
     color: 2 # orange
 
   # Encryption
   autumn:
-    label: "Autumn"
+    defaultLabel: "Autumn"
     description: "End-to-end encryption service"
     icon: "Shield"
     color: 4 # green

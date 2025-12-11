@@ -1,5 +1,5 @@
 {
-  "vv": {
+  "pv": {
     "name": "Zero Email Application Architecture",
     "version": "1.0.0",
     "edgeTypes": {
@@ -86,7 +86,7 @@
       "width": 200,
       "height": 80,
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "nodeType": "frontend",
         "shape": "rectangle"
       }
@@ -99,7 +99,7 @@
       "width": 200,
       "height": 80,
       "color": "#22c55e",
-      "vv": {
+      "pv": {
         "nodeType": "backend",
         "shape": "rectangle"
       }
@@ -112,7 +112,7 @@
       "width": 180,
       "height": 80,
       "color": "#f97316",
-      "vv": {
+      "pv": {
         "nodeType": "better-auth",
         "shape": "rectangle"
       }
@@ -125,7 +125,7 @@
       "width": 180,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "zero-agent",
         "shape": "rectangle"
       }
@@ -138,7 +138,7 @@
       "width": 180,
       "height": 80,
       "color": "#f97316",
-      "vv": {
+      "pv": {
         "nodeType": "zero-driver",
         "shape": "rectangle"
       }
@@ -151,7 +151,7 @@
       "width": 180,
       "height": 80,
       "color": "#22c55e",
-      "vv": {
+      "pv": {
         "nodeType": "zero-db",
         "shape": "rectangle"
       }
@@ -164,7 +164,7 @@
       "width": 180,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "zero-mcp",
         "shape": "rectangle"
       }
@@ -177,7 +177,7 @@
       "width": 180,
       "height": 80,
       "color": "#eab308",
-      "vv": {
+      "pv": {
         "nodeType": "workflow-runner",
         "shape": "rectangle"
       }
@@ -190,7 +190,7 @@
       "width": 200,
       "height": 80,
       "color": "#f97316",
-      "vv": {
+      "pv": {
         "nodeType": "thread-sync-worker",
         "shape": "rectangle"
       }
@@ -203,7 +203,7 @@
       "width": 180,
       "height": 80,
       "color": "#22c55e",
-      "vv": {
+      "pv": {
         "nodeType": "shard-registry",
         "shape": "rectangle"
       }
@@ -216,7 +216,7 @@
       "width": 180,
       "height": 80,
       "color": "#ef4444",
-      "vv": {
+      "pv": {
         "nodeType": "postgres",
         "shape": "circle"
       }
@@ -229,7 +229,7 @@
       "width": 180,
       "height": 80,
       "color": "#f97316",
-      "vv": {
+      "pv": {
         "nodeType": "r2-storage",
         "shape": "circle"
       }
@@ -242,7 +242,7 @@
       "width": 180,
       "height": 80,
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "nodeType": "vectorize",
         "shape": "circle"
       }
@@ -255,7 +255,7 @@
       "width": 140,
       "height": 80,
       "color": "#ef4444",
-      "vv": {
+      "pv": {
         "nodeType": "gmail-api",
         "shape": "rectangle"
       }
@@ -268,7 +268,7 @@
       "width": 140,
       "height": 80,
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "nodeType": "microsoft-graph",
         "shape": "rectangle"
       }
@@ -281,7 +281,7 @@
       "width": 140,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "openai",
         "shape": "hexagon"
       }
@@ -294,7 +294,7 @@
       "width": 140,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "anthropic",
         "shape": "hexagon"
       }
@@ -307,7 +307,7 @@
       "width": 140,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "google-ai",
         "shape": "hexagon"
       }
@@ -320,7 +320,7 @@
       "width": 140,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "groq",
         "shape": "hexagon"
       }
@@ -333,7 +333,7 @@
       "width": 140,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "perplexity",
         "shape": "hexagon"
       }
@@ -346,7 +346,7 @@
       "width": 140,
       "height": 80,
       "color": "#22c55e",
-      "vv": {
+      "pv": {
         "nodeType": "resend",
         "shape": "rectangle"
       }
@@ -359,7 +359,7 @@
       "width": 140,
       "height": 80,
       "color": "#ef4444",
-      "vv": {
+      "pv": {
         "nodeType": "twilio",
         "shape": "rectangle"
       }
@@ -372,7 +372,7 @@
       "width": 140,
       "height": 80,
       "color": "#eab308",
-      "vv": {
+      "pv": {
         "nodeType": "elevenlabs",
         "shape": "rectangle"
       }
@@ -385,7 +385,7 @@
       "width": 140,
       "height": 80,
       "color": "#22c55e",
-      "vv": {
+      "pv": {
         "nodeType": "upstash",
         "shape": "circle"
       }
@@ -398,7 +398,7 @@
       "width": 140,
       "height": 80,
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "nodeType": "datadog",
         "shape": "diamond"
       }
@@ -411,7 +411,7 @@
       "width": 140,
       "height": 80,
       "color": "#ef4444",
-      "vv": {
+      "pv": {
         "nodeType": "sentry",
         "shape": "diamond"
       }
@@ -424,7 +424,7 @@
       "width": 140,
       "height": 80,
       "color": "#eab308",
-      "vv": {
+      "pv": {
         "nodeType": "posthog",
         "shape": "diamond"
       }
@@ -437,7 +437,7 @@
       "width": 140,
       "height": 80,
       "color": "#22c55e",
-      "vv": {
+      "pv": {
         "nodeType": "autumn",
         "shape": "rectangle"
       }
@@ -448,7 +448,7 @@
       "id": "e1",
       "fromNode": "frontend",
       "toNode": "backend",
-      "vv": {
+      "pv": {
         "edgeType": "trpc-call"
       }
     },
@@ -456,7 +456,7 @@
       "id": "e2",
       "fromNode": "frontend",
       "toNode": "zero-agent",
-      "vv": {
+      "pv": {
         "edgeType": "websocket"
       }
     },
@@ -464,7 +464,7 @@
       "id": "e3",
       "fromNode": "frontend",
       "toNode": "better-auth",
-      "vv": {
+      "pv": {
         "edgeType": "auth-session"
       }
     },
@@ -472,7 +472,7 @@
       "id": "e4",
       "fromNode": "backend",
       "toNode": "zero-agent",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -480,7 +480,7 @@
       "id": "e5",
       "fromNode": "backend",
       "toNode": "zero-driver",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -488,7 +488,7 @@
       "id": "e6",
       "fromNode": "backend",
       "toNode": "zero-db",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -496,7 +496,7 @@
       "id": "e7",
       "fromNode": "backend",
       "toNode": "workflow-runner",
-      "vv": {
+      "pv": {
         "edgeType": "workflow-trigger"
       }
     },
@@ -504,7 +504,7 @@
       "id": "e8",
       "fromNode": "zero-agent",
       "toNode": "openai",
-      "vv": {
+      "pv": {
         "edgeType": "ai-request"
       }
     },
@@ -512,7 +512,7 @@
       "id": "e9",
       "fromNode": "zero-agent",
       "toNode": "anthropic",
-      "vv": {
+      "pv": {
         "edgeType": "ai-request"
       }
     },
@@ -520,7 +520,7 @@
       "id": "e10",
       "fromNode": "zero-agent",
       "toNode": "google-ai",
-      "vv": {
+      "pv": {
         "edgeType": "ai-request"
       }
     },
@@ -528,7 +528,7 @@
       "id": "e11",
       "fromNode": "zero-agent",
       "toNode": "groq",
-      "vv": {
+      "pv": {
         "edgeType": "ai-request"
       }
     },
@@ -536,7 +536,7 @@
       "id": "e12",
       "fromNode": "zero-agent",
       "toNode": "perplexity",
-      "vv": {
+      "pv": {
         "edgeType": "ai-request"
       }
     },
@@ -544,7 +544,7 @@
       "id": "e13",
       "fromNode": "zero-agent",
       "toNode": "zero-mcp",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -552,7 +552,7 @@
       "id": "e14",
       "fromNode": "zero-driver",
       "toNode": "gmail-api",
-      "vv": {
+      "pv": {
         "edgeType": "email-sync"
       }
     },
@@ -560,7 +560,7 @@
       "id": "e15",
       "fromNode": "zero-driver",
       "toNode": "microsoft-graph",
-      "vv": {
+      "pv": {
         "edgeType": "email-sync"
       }
     },
@@ -568,7 +568,7 @@
       "id": "e16",
       "fromNode": "zero-driver",
       "toNode": "gmail-api",
-      "vv": {
+      "pv": {
         "edgeType": "oauth"
       }
     },
@@ -576,7 +576,7 @@
       "id": "e17",
       "fromNode": "zero-driver",
       "toNode": "microsoft-graph",
-      "vv": {
+      "pv": {
         "edgeType": "oauth"
       }
     },
@@ -584,7 +584,7 @@
       "id": "e18",
       "fromNode": "zero-driver",
       "toNode": "r2-storage",
-      "vv": {
+      "pv": {
         "edgeType": "storage-write"
       }
     },
@@ -592,7 +592,7 @@
       "id": "e19",
       "fromNode": "zero-db",
       "toNode": "postgres",
-      "vv": {
+      "pv": {
         "edgeType": "db-query"
       }
     },
@@ -600,7 +600,7 @@
       "id": "e20",
       "fromNode": "zero-db",
       "toNode": "postgres",
-      "vv": {
+      "pv": {
         "edgeType": "db-write"
       }
     },
@@ -608,7 +608,7 @@
       "id": "e21",
       "fromNode": "workflow-runner",
       "toNode": "thread-sync-worker",
-      "vv": {
+      "pv": {
         "edgeType": "workflow-step"
       }
     },
@@ -616,7 +616,7 @@
       "id": "e22",
       "fromNode": "workflow-runner",
       "toNode": "shard-registry",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -624,7 +624,7 @@
       "id": "e23",
       "fromNode": "thread-sync-worker",
       "toNode": "zero-driver",
-      "vv": {
+      "pv": {
         "edgeType": "email-fetch"
       }
     },
@@ -632,7 +632,7 @@
       "id": "e24",
       "fromNode": "thread-sync-worker",
       "toNode": "r2-storage",
-      "vv": {
+      "pv": {
         "edgeType": "storage-read"
       }
     },
@@ -640,7 +640,7 @@
       "id": "e25",
       "fromNode": "thread-sync-worker",
       "toNode": "vectorize",
-      "vv": {
+      "pv": {
         "edgeType": "embedding"
       }
     },
@@ -648,7 +648,7 @@
       "id": "e26",
       "fromNode": "backend",
       "toNode": "resend",
-      "vv": {
+      "pv": {
         "edgeType": "email-send"
       }
     },
@@ -656,7 +656,7 @@
       "id": "e27",
       "fromNode": "backend",
       "toNode": "twilio",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -664,7 +664,7 @@
       "id": "e28",
       "fromNode": "zero-agent",
       "toNode": "elevenlabs",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -672,7 +672,7 @@
       "id": "e29",
       "fromNode": "backend",
       "toNode": "upstash",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -680,7 +680,7 @@
       "id": "e30",
       "fromNode": "backend",
       "toNode": "datadog",
-      "vv": {
+      "pv": {
         "edgeType": "telemetry"
       }
     },
@@ -688,7 +688,7 @@
       "id": "e31",
       "fromNode": "backend",
       "toNode": "sentry",
-      "vv": {
+      "pv": {
         "edgeType": "error-report"
       }
     },
@@ -696,7 +696,7 @@
       "id": "e32",
       "fromNode": "frontend",
       "toNode": "posthog",
-      "vv": {
+      "pv": {
         "edgeType": "telemetry"
       }
     },
@@ -704,7 +704,7 @@
       "id": "e33",
       "fromNode": "frontend",
       "toNode": "sentry",
-      "vv": {
+      "pv": {
         "edgeType": "error-report"
       }
     },
@@ -712,7 +712,7 @@
       "id": "e34",
       "fromNode": "backend",
       "toNode": "autumn",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     },
@@ -720,7 +720,7 @@
       "id": "e35",
       "fromNode": "backend",
       "toNode": "postgres",
-      "vv": {
+      "pv": {
         "edgeType": "db-query"
       }
     },
@@ -728,7 +728,7 @@
       "id": "e36",
       "fromNode": "better-auth",
       "toNode": "postgres",
-      "vv": {
+      "pv": {
         "edgeType": "http-request"
       }
     }
