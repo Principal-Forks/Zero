@@ -448,6 +448,8 @@
       "id": "e1",
       "fromNode": "frontend",
       "toNode": "backend",
+      "fromSide": "bottom",
+      "toSide": "top",
       "pv": {
         "edgeType": "trpc-call"
       }
@@ -456,6 +458,8 @@
       "id": "e2",
       "fromNode": "frontend",
       "toNode": "zero-agent",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "websocket"
       }
@@ -464,6 +468,8 @@
       "id": "e3",
       "fromNode": "frontend",
       "toNode": "better-auth",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "auth-session"
       }
@@ -472,6 +478,8 @@
       "id": "e4",
       "fromNode": "backend",
       "toNode": "zero-agent",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "http-request"
       }
@@ -480,6 +488,8 @@
       "id": "e5",
       "fromNode": "backend",
       "toNode": "zero-driver",
+      "fromSide": "bottom",
+      "toSide": "top",
       "pv": {
         "edgeType": "http-request"
       }
@@ -488,6 +498,8 @@
       "id": "e6",
       "fromNode": "backend",
       "toNode": "zero-db",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "http-request"
       }
@@ -496,6 +508,8 @@
       "id": "e7",
       "fromNode": "backend",
       "toNode": "workflow-runner",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "workflow-trigger"
       }
@@ -504,6 +518,8 @@
       "id": "e8",
       "fromNode": "zero-agent",
       "toNode": "openai",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "ai-request"
       }
@@ -512,6 +528,8 @@
       "id": "e9",
       "fromNode": "zero-agent",
       "toNode": "anthropic",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "ai-request"
       }
@@ -520,6 +538,8 @@
       "id": "e10",
       "fromNode": "zero-agent",
       "toNode": "google-ai",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "ai-request"
       }
@@ -528,6 +548,8 @@
       "id": "e11",
       "fromNode": "zero-agent",
       "toNode": "groq",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "ai-request"
       }
@@ -536,6 +558,8 @@
       "id": "e12",
       "fromNode": "zero-agent",
       "toNode": "perplexity",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "ai-request"
       }
@@ -544,6 +568,8 @@
       "id": "e13",
       "fromNode": "zero-agent",
       "toNode": "zero-mcp",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "http-request"
       }
@@ -552,6 +578,8 @@
       "id": "e14",
       "fromNode": "zero-driver",
       "toNode": "gmail-api",
+      "fromSide": "top",
+      "toSide": "bottom",
       "pv": {
         "edgeType": "email-sync"
       }
@@ -560,6 +588,8 @@
       "id": "e15",
       "fromNode": "zero-driver",
       "toNode": "microsoft-graph",
+      "fromSide": "top",
+      "toSide": "bottom",
       "pv": {
         "edgeType": "email-sync"
       }
@@ -568,6 +598,8 @@
       "id": "e16",
       "fromNode": "zero-driver",
       "toNode": "gmail-api",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "oauth"
       }
@@ -576,6 +608,8 @@
       "id": "e17",
       "fromNode": "zero-driver",
       "toNode": "microsoft-graph",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "oauth"
       }
@@ -584,6 +618,8 @@
       "id": "e18",
       "fromNode": "zero-driver",
       "toNode": "r2-storage",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "storage-write"
       }
@@ -592,6 +628,8 @@
       "id": "e19",
       "fromNode": "zero-db",
       "toNode": "postgres",
+      "fromSide": "bottom",
+      "toSide": "top",
       "pv": {
         "edgeType": "db-query"
       }
@@ -600,6 +638,8 @@
       "id": "e20",
       "fromNode": "zero-db",
       "toNode": "postgres",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "db-write"
       }
@@ -608,6 +648,8 @@
       "id": "e21",
       "fromNode": "workflow-runner",
       "toNode": "thread-sync-worker",
+      "fromSide": "bottom",
+      "toSide": "top",
       "pv": {
         "edgeType": "workflow-step"
       }
@@ -616,6 +658,8 @@
       "id": "e22",
       "fromNode": "workflow-runner",
       "toNode": "shard-registry",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "http-request"
       }
@@ -624,6 +668,8 @@
       "id": "e23",
       "fromNode": "thread-sync-worker",
       "toNode": "zero-driver",
+      "fromSide": "left",
+      "toSide": "top",
       "pv": {
         "edgeType": "email-fetch"
       }
@@ -632,6 +678,8 @@
       "id": "e24",
       "fromNode": "thread-sync-worker",
       "toNode": "r2-storage",
+      "fromSide": "bottom",
+      "toSide": "top",
       "pv": {
         "edgeType": "storage-read"
       }
@@ -640,6 +688,8 @@
       "id": "e25",
       "fromNode": "thread-sync-worker",
       "toNode": "vectorize",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "embedding"
       }
@@ -648,6 +698,8 @@
       "id": "e26",
       "fromNode": "backend",
       "toNode": "resend",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "email-send"
       }
@@ -656,6 +708,8 @@
       "id": "e27",
       "fromNode": "backend",
       "toNode": "twilio",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "http-request"
       }
@@ -664,6 +718,8 @@
       "id": "e28",
       "fromNode": "zero-agent",
       "toNode": "elevenlabs",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "http-request"
       }
@@ -672,6 +728,8 @@
       "id": "e29",
       "fromNode": "backend",
       "toNode": "upstash",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "http-request"
       }
@@ -680,6 +738,8 @@
       "id": "e30",
       "fromNode": "backend",
       "toNode": "datadog",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "telemetry"
       }
@@ -688,6 +748,8 @@
       "id": "e31",
       "fromNode": "backend",
       "toNode": "sentry",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "error-report"
       }
@@ -696,6 +758,8 @@
       "id": "e32",
       "fromNode": "frontend",
       "toNode": "posthog",
+      "fromSide": "right",
+      "toSide": "left",
       "pv": {
         "edgeType": "telemetry"
       }
@@ -704,6 +768,8 @@
       "id": "e33",
       "fromNode": "frontend",
       "toNode": "sentry",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "error-report"
       }
@@ -712,6 +778,8 @@
       "id": "e34",
       "fromNode": "backend",
       "toNode": "autumn",
+      "fromSide": "left",
+      "toSide": "right",
       "pv": {
         "edgeType": "http-request"
       }
@@ -720,6 +788,8 @@
       "id": "e35",
       "fromNode": "backend",
       "toNode": "postgres",
+      "fromSide": "bottom",
+      "toSide": "top",
       "pv": {
         "edgeType": "db-query"
       }
@@ -728,6 +798,8 @@
       "id": "e36",
       "fromNode": "better-auth",
       "toNode": "postgres",
+      "fromSide": "bottom",
+      "toSide": "right",
       "pv": {
         "edgeType": "http-request"
       }
